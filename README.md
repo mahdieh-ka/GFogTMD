@@ -1,16 +1,23 @@
 # TMDetector
 
-The app contains two different modules:
+The app contains three different modules:
 
 1- Recording module: A module to record ground truth for generating a new classifier.
 
 2- Detection module: A module using the Woorti classifier to detect the users modes. 
+
+3- Extraction module: A module for visualising and analysing data for extracting the efficient set of features. 
 
 Recording module:
 The app uses three different sensors including GPS, accelerometer and magnetometer. 
 
 Detection module:
 Detection module segmentize data with the window size of 90 seconds, sent the segments to classifier and generate a list of the probabilities for 6 mode classes: still, walk, bike, car, bus, train. Then it merges the segments with a post-processing phase for missclassification correction. 
+
+Extraction module: 
+The app visualize magnteometer data particularly to learn the most important features for diffrentiation between motorised modes. 
+
+
 
 Post-processing phases
 
