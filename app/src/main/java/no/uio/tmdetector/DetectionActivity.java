@@ -67,6 +67,7 @@ public class DetectionActivity extends AppCompatActivity implements SingleChoice
 
         Classifier.loadModelAsync();
         Classifier.setContext(this);
+
         toggleBtnTrip = (ToggleButton) findViewById(R.id.tglBtnTrip);
         btnActualMode = (Button) findViewById(R.id.btnActualMode);
         selectTripMode();

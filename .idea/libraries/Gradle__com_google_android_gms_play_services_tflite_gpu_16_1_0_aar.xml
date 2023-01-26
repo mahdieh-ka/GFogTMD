@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-tflite-gpu:16.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/39f23d922c343a9ddba57c30aee01b5c/jetified-play-services-tflite-gpu-16.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7e19456ac09e25f83d0cb2f20675794a/transformed/jetified-play-services-tflite-gpu-16.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6f53576098e79f411b21eb17bad0421c/transformed/jetified-play-services-tflite-gpu-16.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6f53576098e79f411b21eb17bad0421c/transformed/jetified-play-services-tflite-gpu-16.1.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-tflite-gpu/16.1.0/a6184956321832ac014c7ee9a73532ca5d1560c7/play-services-tflite-gpu-16.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

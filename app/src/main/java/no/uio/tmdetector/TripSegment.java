@@ -107,7 +107,7 @@ class TripSegment {
 
             }
             locSegmentation();
-            magSegmentation(startTime);
+            magSegmentation();
 
             return listOfSegments;
         }
@@ -156,9 +156,9 @@ class TripSegment {
 
     }
 
-    //todo: add magnetometer
+
     //segment rawMagnetics with the segmentSize of 90 seconds
-    public void magSegmentation(Long startTime) {
+    public void magSegmentation() {
         ArrayList<Float> magValues = new ArrayList<>();
 
         for (int i = 0; i < listOfSegments.size(); i++ ) {

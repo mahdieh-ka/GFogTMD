@@ -31,7 +31,6 @@ import java.util.Map;
      void start() {
         this.startDate = new Date();
         this.startDateTs = Instant.now().toEpochMilli();
-
         inProgress = true;
     }
 

@@ -179,7 +179,8 @@ public class TripManager {
                     Classifier classifier = new Classifier();
                     classifier.addLocation(tripSegments.get(i).getLocSegment());
                     classifier.addAcceleration(tripSegments.get(i).getAccSegment());
-                    segmentAssignments(classifier,i,tripSegments);
+                    //classifier.addMagnetic(tripSegments.get(i).getMagSegment());
+                segmentAssignments(classifier,i,tripSegments);
             }
             //post-process Trip
             //merge segments with the same mode to leg

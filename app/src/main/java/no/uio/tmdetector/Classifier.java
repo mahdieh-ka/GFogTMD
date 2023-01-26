@@ -29,6 +29,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+
+
 /**
  * This class holds the raw acceleration and location values and is responsible for calculation the
  * model features and classifying the trip and a final post-classification step to correct miss-classification with rawMagneticField.
@@ -37,6 +39,8 @@ class Classifier {
 
     private static String TAG = "Classifier";
     private List<Float> rawAccelerationsSegment;
+    private List<Float> rawMagneticsSegment;
+
     private List<Location> rawLocationsSegment;
     private Map<String, Float> features;
     @SuppressLint("StaticFieldLeak")
@@ -45,6 +49,7 @@ class Classifier {
     @SuppressLint("StaticFieldLeak")
     private static Context context;
     private static boolean modelLoaded = false;
+
 
 
     public Classifier() {
@@ -63,6 +68,10 @@ class Classifier {
     void addAcceleration(List<Float> accelerations) {
         rawAccelerationsSegment = accelerations;
     }
+    void addMagnetic(List<Float> magnetics) {
+        rawMagneticsSegment = magnetics;
+    }
+
 
 
 
@@ -295,6 +304,7 @@ class Classifier {
     private void initializeValues()     {
         rawAccelerationsSegment = new ArrayList<>();
         rawLocationsSegment = new ArrayList<>();
+        //rawMagneticsSegment = new ArrayList<>();
         features = new HashMap<String, Float>() {{
             put("avgAccel", (float) 0);
             put("minAccel", (float) 0);

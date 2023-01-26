@@ -13,10 +13,10 @@ public class BackgroundTripStorage extends AsyncTask<Void, Void, Boolean> {
     private final static String OS = "Android";
     private String accX, accY, accZ, accMagnitude, magX, magY, magZ, magMagnitude,
             tripStartDate ,legStartDate , eventDate, latitude , longitude, accuracy;
-    private long timestamp ,eventTimestamp ,tripStartDateTs ,  legStartDateTs;
+    private long timestamp, eventTimestamp, tripStartDateTs,  legStartDateTs;
     private Location location;
     private int tripId;
-    public static int correctedModeOfTransport,previousSelectedMode, legId , previousTripId;
+    public static int correctedModeOfTransport, previousSelectedMode, legId , previousTripId;
     private AccListener accListener;
     private MagListener magListener;
     private TripManager tripManager;
@@ -46,7 +46,7 @@ public class BackgroundTripStorage extends AsyncTask<Void, Void, Boolean> {
 
         DateFormat dateFormatter = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy");
         tripStartDate = dateFormatter.format(tripManager.currentTrip.getStartDate());
-        tripStartDateTs =tripManager.currentTrip.getStartDateTs();
+        tripStartDateTs = tripManager.currentTrip.getStartDateTs();
         tripId= tripManager.tripId;
         if (previousTripId != tripId){initializeValues();}
         previousTripId= tripId;
@@ -91,8 +91,6 @@ public class BackgroundTripStorage extends AsyncTask<Void, Void, Boolean> {
         previousSelectedMode = -1;
         correctedModeOfTransport = -2;
         legId = 0;
-
-
     }
 
 

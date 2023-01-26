@@ -22,9 +22,10 @@ public class LocationListener extends LocationCallback{
     public void onLocationResult(LocationResult locationResult) {
         for (Location location : locationResult.getLocations()) {
             Log.d(TAG, "Got location update:" + location + "    time: " +Utility.getTime(location.getTime()));
-            //Log.d(TAG, "Got location update:" + location + "    time: " +Utility.getTime(Instant.now().toEpochMilli()));
+            Log.d(TAG, "Got location update:" + location + "    time: " +Utility.getTime(Instant.now().toEpochMilli()));
             location_result = location;
             TripSegment.getInstance().addLocation(location);
+
 
         }
     }
