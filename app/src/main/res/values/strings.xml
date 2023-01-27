@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TMDetector1.2.12</string>
+    <string name="app_name">TMDetector1.1.12</string>
     <string name="show_triplist">Show TripList</string>
     <string name="actual_mode">Actual Mode</string>
     <string name="predicted_mode">Predicted Mode</string>
@@ -17,22 +17,6 @@
         <item>plain</item>
         <item>bus</item>
         <item>other</item>
-    </string-array>
-
-    <string-array name="cities">
-        <item>Oslo</item>
-        <item>Lisbon</item>
-        <item>Rome</item>
-        <item>London</item>
-        <item>Berlin</item>
-        <item>Munich</item>
-    </string-array>
-
-    <string-array name="roadConditions">
-        <item>Asphalt</item>
-        <item>Gravel road</item>
-        <item>cobblestone</item>
-        <item>granites setts</item>
     </string-array>
     <string name="action_upload_DB">Upload DB</string>
     <string name="dbNameHint">Enter DB name</string>
@@ -57,5 +41,4 @@
     <string name="login_failed">"Login failed"</string>
     <string name="show_My_Trips">My Trips</string>
     <string name="txtDescription">You are anonymously signed in \n otherwise link your account</string>
-    <string name="togglebutton">ToggleButton</string>
 </resources>

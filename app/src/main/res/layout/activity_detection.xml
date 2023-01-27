@@ -12,9 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="22dp"
         android:onClick="toggleStartTrip"
-        android:text="@string/togglebutton"
+        android:text="ToggleButton"
         android:textOff="@string/start_trip"
         android:textOn="@string/stop_trip"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,13 +24,11 @@
         android:id="@+id/btnActualMode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="22dp"
         android:layout_marginBottom="4dp"
         android:text="@string/actual_mode"
         app:layout_constraintBaseline_toBaselineOf="@id/tglBtnTrip"
         app:layout_constraintStart_toEndOf="@id/tglBtnTrip" />
-
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
@@ -47,6 +45,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tglBtnTrip"
+
         tools:listitem="@android:layout/simple_selectable_list_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
