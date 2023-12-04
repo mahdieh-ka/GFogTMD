@@ -3,15 +3,14 @@ apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.google.firebase.crashlytics'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 29
 
     defaultConfig {
-        applicationId "no.uio.tmdetector"
+        applicationId "no.uio.gfogtmd"
         minSdkVersion 25
-        targetSdkVersion 30
+        targetSdkVersion 29
         versionCode 1
         versionName "1.1-Beta"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -29,7 +28,7 @@ android {
     androidResources {
         noCompress 'lite'
     }
-    namespace 'no.uio.tmdetector'
+    namespace 'no.uio.gfogtmd'
 }
 repositories {
     maven { url 'https://jitpack.io' }
@@ -66,9 +65,10 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.4'
     // Tensorflow Lite dependencies
     implementation 'org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2'
-    implementation 'com.google.android.gms:play-services-tflite-gpu:16.1.0'
-    implementation 'org.tensorflow:tensorflow-lite:+'
+    implementation 'com.google.android.gms:play-services-tflite-gpu:16.2.0'
+    implementation 'org.tensorflow:tensorflow-lite:2.10.0'
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
+    implementation 'com.android.volley:volley:1.1.0'
 
 
 }

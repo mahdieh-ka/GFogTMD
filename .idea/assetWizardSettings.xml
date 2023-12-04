@@ -158,7 +158,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$USER_HOME$/Communicating science/pics/ic_tmdetector.png" />
+                                                <entry key="imagePath" value="$USER_HOME$/Communicating science/pics/icons8-running-50.png" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -191,7 +191,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Communicating science/pics/ic_tmdetector.png" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Communicating science/pics/icons8-running-50.png" />
                                       <entry key="outputName" value="ic_launcher_tmd" />
                                     </map>
                                   </option>
@@ -210,6 +210,18 @@
                                               <map>
                                                 <entry key="color" value="000000" />
                                                 <entry key="imagePath" value="/private/var/folders/8b/rzlhpgw9599d99qn0lmz8s5m0000gq/T/ic_android_black_24dp.xml" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                      <entry key="image">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="color" value="000000" />
+                                                <entry key="imagePath" value="$USER_HOME$/Communicating science/pics/icons8-running-50.png" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -237,6 +249,13 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Communicating science/pics/icons8-running-50.png" />
+                                      <entry key="outputName" value="ic_run" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -321,7 +340,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
+                            <entry key="outputIconType" value="NOTIFICATION" />
                           </map>
                         </option>
                       </PersistentState>
