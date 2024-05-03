@@ -1,4 +1,6 @@
 TMDetector
+
+
 TMDetector is an Android application developed in Java designed to detect a user's mode of transportation. The application utilizes a Random Forest classifier and leverages data from various sensors to achieve accurate detection. It's structured into three main modules: Collection, Detection, and Extraction.
 
 Modules
