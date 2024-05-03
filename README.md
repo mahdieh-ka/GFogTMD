@@ -1,23 +1,16 @@
-# TMDetector
+TMDetector
+TMDetector is an Android application developed in Java designed to detect a user's mode of transportation. The application utilizes a Random Forest classifier and leverages data from various sensors to achieve accurate detection. It's structured into three main modules: Collection, Detection, and Extraction.
 
-The app contains three different modules:
+Modules
+1. Collection Module
+This module is used to record ground truth data to help generate a new classifier. It utilizes three different sensors:
+GPS
+Accelerometer
+Magnetometer
 
-1- Collection module: A module to record ground truth for generating a new classifier.
+3. Detection Module
+Utilizes a pre-trained Random Forest classifier to detect the user’s current mode of transport based on the sensor data. The Random Forest classifier is trained using the scikit-learn library. Then exported as a JPMML file. 
 
-2- Detection module: A module using the Woorti classifier to detect the user's modes. 
-
-3- Extraction module: A module for visualizing and analyzing data for extracting an efficient set of features. 
-
-Collection module:
-The app uses three different sensors including GPS, accelerometer, and magnetometer. 
-
-Detection module:
-The detection module uses the collection module for reading sensor data in real-time. It then sends the raw data to the classifier and generates a list of the probabilities for 9 mode classes: still, walk, bike, car, bus, train, tram, subway, and run. This module contains a TensorflowLite MLP model exported from Keras. This model is a base model trained on data from four different cities. 
-
-
-
-
-
-
-
+4. Extraction Module
+Focuses on visualizing and analyzing sensor data to extract an efficient set of features that can be used to improve the classifier's performance, particularly magnetometer sensor. 
 
