@@ -64,7 +64,7 @@ public class TripAdapter extends RecyclerView.Adapter<TripAdapter.TripViewHolder
         viewHolder.txtEnd.setText(dateFormatter.format(trip.getEndDate()));
         viewHolder.txtTripId.setText(trip.getTripId() + " ");
         viewHolder.txtActualMode.setText(retrieveActualModes(trip));
-        //viewHolder.txtPredictedMode.setText(convertPredictedModesToString(trip));
+        viewHolder.txtPredictedMode.setText(convertPredictedModesToString(trip));
 
 
         ImageView tripIcon = viewHolder.tripIcon;
