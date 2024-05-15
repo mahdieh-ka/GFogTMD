@@ -1,6 +1,6 @@
 GFogTMD contains two different modules:
 
-1- collection module: A module to record ground truth for generating a new Neural Network classifier.
+1- Collection module: A module to record ground truth for generating a new Neural Network classifier.
 
 2- Detection module: A module using an MLP classifier to detect the user's modes. 
 
